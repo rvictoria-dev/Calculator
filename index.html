@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Cute Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+
+    <div class="calc-wrapper">
+      <div class="display">
+      <div class="expression" id="expression"></div>
+      <div class="value" id="display">0</div>
+    </div>
+
+    <div class="buttons">
+    <button class="btn-clear" onclick="handleBtn('ac')">AC</button>
+    <button class="btn-clear" onclick="handleBtn('del')">DEL</button>
+    <button class="btn-op"    onclick="handleBtn('%')">%</button>
+    <button class="btn-op"    onclick="handleBtn('/')">/</button>
+
+    <button onclick="handleBtn('7')">7</button>
+    <button onclick="handleBtn('8')">8</button>
+    <button onclick="handleBtn('9')">9</button>
+    <button class="btn-op" onclick="handleBtn('*')">*</button>
+
+    <button onclick="handleBtn('4')">4</button>
+    <button onclick="handleBtn('5')">5</button>
+    <button onclick="handleBtn('6')">6</button>
+    <button class="btn-op" onclick="handleBtn('-')">-</button>
+
+    <button onclick="handleBtn('1')">1</button>
+    <button onclick="handleBtn('2')">2</button>
+    <button onclick="handleBtn('3')">3</button>
+    <button class="btn-op" onclick="handleBtn('+')">+</button>
+
+    <div class="row-last">
+      <button onclick="handleBtn('.')">.</button>
+      <button onclick="handleBtn('0')">0</button>
+      <button class="btn-equal" onclick="handleBtn('=')">=</button>
+    </div>
+  </div>
+</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

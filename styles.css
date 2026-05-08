@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2c89a;
+  font-family: 'Nunito', sans-serif;
+}
+
+.calc-wrapper {
+  background: #d9a07a;
+  border-radius: 36px;
+  padding: 32px 28px;
+  box-shadow: 12px 12px 30px #b8835f;
+  width: 320px;
+}
+
+.display {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  text-align: right;
+  min-height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.display,
+.expression {
+  font-size: 13px;
+  min-height: 18px;
+  word-break: break-all;
+}
+
+.display .value {
+  font-size: 36px;
+  font-weight: 300;
+  color: #4a7fa5;
+  letter-spacing: -1px;
+  word-break: break-all;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4a7fa5;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 12px #b8835f;
+  transition: all 0.12s ease;
+  user-select: none;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.btn-equal {
+  background: #4a7fa5;
+  color: #fff;
+  border-radius: 30px;
+  width: 200%;
+}
+
+button.btn-op,
+button.btn-clear {
+  color: #4a7fa5;
+}
+
+.row-last {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 58px 1fr 58px;
+  gap: 14px;
+}
