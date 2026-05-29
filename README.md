@@ -6,17 +6,6 @@ This is my first project as a beginner developer. It's a functional calculator w
 
 ---
 
-### 🌟 Features
-
-- Basic arithmetic: addition, subtraction, multiplication, division
-- Percentage calculation
-- Delete last digit (DEL) and clear all (AC)
-- Expression display (shows the full operation before the result)
-- Keyboard support (type numbers and operators directly)
-- Cute and cozy visual design
-
----
-
 ### 💡 What I Learned
 
 - New HTML tags, elements, and attributes
